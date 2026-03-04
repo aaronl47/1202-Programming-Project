@@ -1,0 +1,259 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, header {
+    font-family: 'Poppins', sans-serif;
+}
+/*/////////////////////////////////////////////// HEADER START \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/* Header bar */
+header {
+    background-color: #000;
+    padding: 25px 50px;
+}
+
+/* Flex layout */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo section */
+.logo-section h1 {
+    color: white;
+    margin: 0;
+    font-size: 28px;
+}
+
+.logo-section p {
+    color: #ccc;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Navigation */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: 16px;
+    font-weight: 500;
+    transition: color 0.5s ease-in;
+}
+
+/* Hover turns yellow */
+.nav-links a:hover {
+    color: rgb(255, 208, 0);
+}
+
+/*/////////////////////////////////////////////// HEADER END \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*/////////////////////////////////////////////// FOOTER START \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/* Footer styling */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 25px 50px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Footer paragraph spacing */
+footer p {
+    margin: 5px 0px;
+    font-size: 14px;
+}
+
+/* Footer link styling */
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.5s ease-in;
+}
+
+/* Hover effect for footer link */
+footer a:hover {
+    color: rgb(217, 177, 1); /* same yellow as header hover */
+}
+/*/////////////////////////////////////////////// HEADER END \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*/////////////////////////////////////////////// BODY START \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/* Main content area */
+main {
+    max-width: 1200px;       /* keeps content readable on large screens */
+    margin: 40px auto;       /* center content with top/bottom spacing */
+    padding: 0px 50px;
+    color: #000000;          /* default text color */
+    font-family: 'Inter', sans-serif;
+    line-height: 24px;       /* readable spacing */
+}
+
+/* Section titles */
+main h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: rgb(217, 177, 1);          /* subtle accent (blue) or could use yellow for headings if you prefer */
+}
+
+/* Articles inside sections */
+article {
+    background-color: #ffffff; /* white card-like background */
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Article headings */
+article h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+/* Paragraphs */
+main p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+/* Lists */
+main ul {
+    list-style: disc inside;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+main ul li {
+    margin-bottom: 10px;
+}
+
+/* Aside / sidebar */
+aside {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Aside headings */
+aside h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+/* Aside links */
+aside a {
+    color: rgb(217, 177, 1);  /* orangy-yellow links */
+    text-decoration: none;
+    transition: color 0.3s ease-in;
+}
+
+aside a:hover {
+    color: rgb(217, 177, 1);           /* subtle hover effect to blue */
+}
+
+/* Images */
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Optional: highlight important text in yellow */
+.highlight {
+    color: rgb(217, 177, 1);
+    font-weight: 500;
+}
+
+/* Contact page layout fix */
+/* Contact page layout fix */
+
+/* Make form use a clean 2-column grid */
+form {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 15px 20px;
+    align-items: start;
+}
+
+/* Section headings span full width */
+form h3 {
+    grid-column: 1 / -1;
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+/* Labels */
+form label {
+    grid-column: 1;
+    font-weight: 500;
+}
+
+/* Inputs, select, textarea */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form select,
+form textarea {
+    grid-column: 2;
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Textarea slightly taller */
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Radio & checkbox groups span full width */
+form input[type="radio"],
+form input[type="checkbox"] {
+    grid-column: 1;
+    width: auto;
+}
+
+form input[type="radio"] + label,
+form input[type="checkbox"] + label {
+    grid-column: 2;
+    display: inline-block;
+    font-weight: normal;
+}
+
+/* Buttons span full width */
+form input[type="submit"],
+form input[type="reset"] {
+    grid-column: 1 / -1;
+    width: 180px;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Put buttons next to each other */
+form input[type="reset"] {
+    margin-left: 15px;
+}
+/*/////////////////////////////////////////////// BODY END \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
